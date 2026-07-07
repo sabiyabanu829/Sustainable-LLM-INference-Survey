@@ -31,6 +31,6 @@ Large Language Models have achieved remarkable performance across numerous tasks
     - [Token Pruning](#token-pruning)
 
     - [RAG Capping](#rag-capping)
-   
-    - ## Input-Level Optimization Techniques
+ ## Input-Level Optimization Techniques
+ 
       
