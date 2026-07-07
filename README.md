@@ -23,6 +23,26 @@ Large Language Models have achieved remarkable performance across numerous tasks
     - [Token Pruning](#token-pruning)
     - [RAG Capping](#rag-capping)
       
+ - [Model-Level Optimization Techniques](#model-level-optimization-techniques)
+  - [Model Size and Architecture Controls](#model-size-and-architecture-controls)
+    - [Architecture Choice](#architecture-choice)
+    - [Mixture of Attention Spans](#mixture-of-attention-spans)
+  - [Numerical Precision and Quantization Controls](#numerical-precision-and-quantization-controls)
+    - [Mixed-Precision Inference](#mixed-precision-inference)
+    - [Post-Training Quantization](#post-training-quantization)
+    - [Activation-Aware Quantization](#activation-aware-quantization)
+    - [Hybrid or Mixed-Precision Quantization](#hybrid-or-mixed-precision-quantization)
+    - [Adaptive Quantization](#adaptive-quantization)
+    - [GGML and GGUF Quantization Formats](#ggml-and-gguf-quantization-formats)
+    - [k-Quantization and BitNet Q1.58](#k-quantization-and-bitnet-q158)
+  - [Activation Pruning and Freezing](#activation-pruning-and-freezing)
+    - [Self-Pruning and Activation Freezing](#self-pruning-and-activation-freezing)
+  - [Token and Layer Reduction Controls](#token-and-layer-reduction-controls)
+    - [Dynamic Token Compression and Adaptive Layer Pruning](#dynamic-token-compression-and-adaptive-layer-pruning)
+  - [Decoding Strategy Controls](#decoding-strategy-controls)
+    - [Speculative Decoding](#speculative-decoding)
+    - [Speculative Beam Decoding](#speculative-beam-decoding)
+    - [Sampling Policy Control](#sampling-policy-control)
 ## Input-Level Optimization Techniques
 
 ### Input Length Control
@@ -52,6 +72,7 @@ Large Language Models have achieved remarkable performance across numerous tasks
 #### Token Pruning
 
 - Adaptive Neural Token Streaming: A Novel Approach for Optimizing Large Language Model Efficiency and Accuracy, *TechRxiv, 2025*. [[Paper](https://doi.org/10.36227/techrxiv.173014495.51612297/v1)]
+  
 
 #### RAG Capping
 
