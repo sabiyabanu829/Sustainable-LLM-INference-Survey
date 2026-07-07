@@ -11,6 +11,8 @@ Large Language Models have achieved remarkable performance across numerous tasks
 
 ## Table of Contents
 
+## Table of Contents
+
 - [Input-Level Optimization Techniques](#input-level-optimization-techniques)
   - [Input Length Control](#input-length-control)
     - [Prompt Design](#prompt-design)
@@ -22,8 +24,8 @@ Large Language Models have achieved remarkable performance across numerous tasks
   - [Context Construction](#context-construction)
     - [Token Pruning](#token-pruning)
     - [RAG Capping](#rag-capping)
-      
- - [Model-Level Optimization Techniques](#model-level-optimization-techniques)
+
+- [Model-Level Optimization Techniques](#model-level-optimization-techniques)
   - [Model Size and Architecture Controls](#model-size-and-architecture-controls)
     - [Architecture Choice](#architecture-choice)
     - [Mixture of Attention Spans](#mixture-of-attention-spans)
@@ -43,6 +45,8 @@ Large Language Models have achieved remarkable performance across numerous tasks
     - [Speculative Decoding](#speculative-decoding)
     - [Speculative Beam Decoding](#speculative-beam-decoding)
     - [Sampling Policy Control](#sampling-policy-control)
+
+
 ## Input-Level Optimization Techniques
 
 ### Input Length Control
