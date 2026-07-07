@@ -8,29 +8,39 @@ This repository provides a comprehensive collection of research papers on sustai
 ## Why Sustainable LLM Inference?
 
 Large Language Models have achieved remarkable performance across numerous tasks. However, their increasing computational requirements lead to high energy consumption, operational costs, and carbon emissions. Sustainable LLM inference aims to improve efficiency while maintaining model performance through optimizations across different stages of the inference pipeline.
+
 ## Table of Contents
 
 - [Input-Level Optimization Techniques](#input-level-optimization-techniques)
-
   - [Input Length Control](#input-length-control)
-
     - [Prompt Design](#prompt-design)
-
     - [Prompt Optimization](#prompt-optimization)
-
   - [Output Length Control](#output-length-control)
-
     - [Format Controls](#format-controls)
-
   - [Stop Criteria](#stop-criteria)
-
     - [Semantic Stopping](#semantic-stopping)
-
   - [Context Construction](#context-construction)
-
     - [Token Pruning](#token-pruning)
-
     - [RAG Capping](#rag-capping)
- ## Input-Level Optimization Techniques
- 
       
+## Input-Level Optimization Techniques
+
+### Input Length Control
+
+#### Prompt Design
+
+#### Prompt Optimization
+
+### Output Length Control
+
+#### Format Controls
+
+### Stop Criteria
+
+#### Semantic Stopping
+
+### Context Construction
+
+#### Token Pruning
+
+#### RAG Capping
