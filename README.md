@@ -81,3 +81,105 @@ Large Language Models have achieved remarkable performance across numerous tasks
 #### RAG Capping
 
 - On the Effectiveness of Proposed Techniques to Reduce Energy Consumption in RAG Systems: A Controlled Experiment, *ACM, 2026*. [[Paper](https://doi.org/10.1145/3786581.3786932)]
+
+## Model-Level Optimization Techniques
+
+Model-level optimization focuses on improving the internal structure, numerical representation, activation behavior, token processing, and decoding strategy of LLMs to reduce energy, carbon, power, latency, and memory cost.
+
+### Model Size and Architecture Controls
+
+#### Architecture Choice
+
+- **TokenPowerBench: Benchmarking the Power Consumption of LLM Inference**  
+  [[Paper](https://arxiv.org/abs/2512.03024)]  
+  Technique: Architecture choice using dense/MoE and layer/width variants.
+
+#### Mixture of Attention Spans
+
+- **Mixture of Attention Spans: Optimizing LLM Inference Efficiency with Heterogeneous Sliding-Window Lengths**  
+  [[Paper](https://doi.org/10.48550/arXiv.2406.14909)]  
+  Technique: Assigns different sliding-window attention spans to attention heads and transformer layers.
+
+### Numerical Precision and Quantization Controls
+
+#### Mixed-Precision Inference
+
+- **Understanding Efficiency: Quantization, Batching, and Serving Strategies in LLM Energy Use**  
+  [[Paper](https://arxiv.org/abs/2601.22362)]  
+  Technique: Uses lower-precision formats such as FP16/BF16 to reduce inference energy.
+
+#### Post-Training Quantization
+
+- **Sustainable LLM Inference for Edge AI: Evaluating Quantized LLMs for Energy Efficiency, Output Accuracy, and Inference Latency**  
+  [[Paper](https://arxiv.org/abs/2504.03360)]  
+  Technique: Applies post-training quantization to reduce inference energy.
+
+#### Activation-Aware Quantization
+
+- **From Prompts to Power: Measuring the Energy Footprint of LLM Inference**  
+  [[Paper](https://arxiv.org/abs/2511.05597)]  
+  Technique: Uses Activation-Aware Weight Quantization (AWQ) to preserve important weights while reducing precision.
+
+#### Hybrid or Mixed-Precision Quantization
+
+- **Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective**  
+  [[Paper](https://doi.org/10.48550/arXiv.2508.16712)]  
+  Technique: Hybrid quantization using different precision levels across model components.
+
+- **FGMP: Fine-Grained Mixed-Precision Weight and Activation Quantization for Hardware-Accelerated LLM Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2504.14152)]  
+  Technique: Fine-grained mixed-precision quantization that preserves sensitive blocks in higher precision.
+
+#### Adaptive Quantization
+
+- **Green Transformers: Leveraging Neuromorphic Computing, Sparse Attention, and Adaptive Quantization for Energy-Efficient Inference**  
+  [[Paper](https://doi.org/10.36227/techrxiv.176127449.98578610/v1)]  
+  Technique: Dynamically adjusts numerical precision according to input complexity and energy metrics.
+
+#### GGML and GGUF Quantization Formats
+
+- **Benchmarking Emerging Deep Learning Quantization Methods for Energy Efficiency**  
+  [[Paper](https://doi.org/10.1109/ICSA-C63560.2024.00049)]  
+  Technique: Evaluates GGML and GGUF lightweight quantized model formats for efficient inference.
+
+#### k-Quantization and BitNet Q1.58
+
+- **LLMPI: Optimizing LLMs for High-Throughput on Raspberry Pi**  
+  [[Paper](https://openaccess.thecvf.com)]  
+  Technique: Uses k-Quantization and BitNet Q1.58 to improve energy efficiency on resource-constrained devices.
+
+### Activation Pruning and Freezing
+
+#### Self-Pruning and Activation Freezing
+
+- **Eco-Transformers: Carbon-Efficient and Accelerated Inference through Self-Pruning and Activation Freezing in Large Language Models**  
+  [[Paper](https://doi.org/10.1109/ICNGCS64900.2025.11183217)]  
+  Technique: Uses dynamic weight masking and activation freezing to reduce computation and carbon emissions.
+
+### Token and Layer Reduction Controls
+
+#### Dynamic Token Compression and Adaptive Layer Pruning
+
+- **Improve the Accuracy and Efficiency of Large Language Models via Dynamic Token Compression and Adaptive Layer Pruning**  
+  [[Paper](https://doi.org/10.36227/techrxiv.173030653.35636983/v1)]  
+  Technique: Compresses redundant tokens and skips unnecessary transformer layers based on input complexity.
+
+### Decoding Strategy Controls
+
+#### Speculative Decoding
+
+- **Multitoken Joint Speculative Decoding for Accelerating Large Language Model Inference**  
+  [[Paper](https://arxiv.org/abs/2407.09722)]  
+  Technique: Uses a draft-and-verify strategy to accelerate autoregressive decoding.
+
+#### Speculative Beam Decoding
+
+- **Dynamic-Width Speculative Beam Decoding for LLM Inference**  
+  [[Paper](https://doi.org/10.1609/aaai.v39i23.34690)]  
+  Technique: Combines speculative decoding with beam search to improve inference efficiency.
+
+#### Sampling Policy Control
+
+- **Impact of Decoding Strategies on GPU Energy Usage in Large Language Model Text Generation**  
+  [[Paper](https://doi.org/10.1038/s41598-025-31896-0)]  
+  Technique: Evaluates top-k, top-p, beam search, and temperature-based sampling strategies for energy-efficient generation.
