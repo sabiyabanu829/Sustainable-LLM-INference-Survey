@@ -218,3 +218,189 @@ Model-level optimization focuses on improving the internal structure, numerical 
 - **Impact of Decoding Strategies on GPU Energy Usage in Large Language Model Text Generation**  
   [[Paper](https://doi.org/10.1038/s41598-025-31896-0)]  
   Technique: Evaluates top-k, top-p, beam search, and temperature-based sampling strategies for energy-efficient generation.
+
+  ## Deployment-Level Optimization Techniques
+
+Deployment-level optimization focuses on improving how LLM inference requests are served, scheduled, routed, cached, and allocated across computing resources to reduce energy consumption, carbon emissions, power usage, latency, and serving cost.
+
+### Batching and Scheduling
+
+#### Continuous Batching
+
+- **Energy Efficiency in Large Language Models: An Empirical Study**  
+  [[Paper](https://link.springer.com/chapter/10.1007/978-3-031-92734-8_22)]  
+  Technique: Continuous batching.
+
+#### Dynamic Batching
+
+- **Inference Acceleration for Large Language Models on CPUs**  
+  [[Paper](https://www.preprints.org/manuscript/202402.1702)]  
+  Technique: Dynamic batching.
+
+#### Batch Tuning
+
+- **Measuring and Improving the Energy Efficiency of Large Language Models Inference**  
+  [[Paper](https://doi.org/10.1109/ACCESS.2024.3409745)]  
+  Technique: Batch tuning.
+
+#### Layered Prefill Scheduling
+
+- **From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill**  
+  [[Paper](https://doi.org/10.48550/arXiv.2510.08055)]  
+  Technique: Layered prefill scheduling.
+
+#### SLIT Scheduling
+
+- **Sustainable Carbon-Aware and Water-Efficient LLM Scheduling in Geo-Distributed Cloud Datacenters**  
+  [[Paper](https://doi.org/10.1145/3716368.3735301)]  
+  Technique: SLIT scheduling.
+
+---
+
+### Elastic Provisioning Controls
+
+#### Traffic-Aware Autoscaling
+
+- **throttLL'eM: Predictive GPU Throttling for Energy Efficient LLM Inference Serving**  
+  [[Paper](https://doi.org/10.1109/HPCA61900.2025.00103)]  
+  Technique: Traffic-aware autoscaling.
+
+#### Instance Scaling and Idle Instance Shutdown
+
+- **DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency**  
+  [[Paper](https://doi.org/10.1109/HPCA61900.2025.00102)]  
+  Technique: Instance scaling and idle instance shutdown.
+
+---
+
+### Memory Management
+
+#### KV-Cache Reuse and Prefix Caching
+
+- **Cache Your Prompt When It's Green—Carbon-Aware Caching for Large Language Model Serving**  
+  [[Paper](https://doi.org/10.1145/3788087)]  
+  Technique: KV-cache reuse and prefix caching.
+
+#### Pre-Stored Attention Matrices
+
+- **StoreLLM: Energy Efficient Large Language Model Inference with Permanently Pre-Stored Attention Matrices**  
+  [[Paper](https://doi.org/10.1145/3679240.3734604)]  
+  Technique: Pre-stored attention matrices.
+
+---
+
+### Semantic Caching
+
+#### Semantic Response Caching
+
+- **Cache Saver: A Modular Framework for Efficient, Affordable, and Reproducible LLM Inference**  
+  [[Paper](https://aclanthology.org/anthology-files/pdf/findings/2025.findings-emnlp.1402.pdf)]  
+  Technique: Semantic response caching.
+
+---
+
+### Routing and Model Selection Controls
+
+#### Task-Aware Model Selection
+
+- **GreenServ: Energy-Efficient Context-Aware Dynamic Routing for Multi-Model LLM Inference**  
+  [[Paper](https://arxiv.org/abs/2601.17551)]  
+  Technique: Task-aware model selection.
+
+#### Confidence-Based Routing
+
+- **HybridServe: Efficient Serving of Large AI Models with Confidence-Based Cascade Routing**  
+  [[Paper](https://doi.org/10.1109/ICDCSW63273.2025.00028)]  
+  Technique: Confidence-based routing.
+
+- **Reducing Environmental Costs Whilst Maintaining Operational Effectiveness in Large Language Models Through Chain Routing**  
+  [[Paper](https://aclanthology.org/2025.konvens-2.20.pdf)]  
+  Technique: Environmental-cost routing.
+
+#### Dynamic Routing
+
+- **Smart Meta-Controller: Energy Efficient Dynamic Routing for Large Language Model Inference Systems**  
+  [[Paper](https://doi.org/10.1109/CSITSS67709.2025.11295492)]  
+  Technique: Dynamic routing.
+
+#### Context Routing
+
+- **Sustainable LLM Inference Using Context-Aware Model Switching**  
+  [[Paper](https://arxiv.org/abs/2602.22261)]  
+  Technique: Context routing.
+
+#### Energy-Aware Routing
+
+- **PEARL: Performance and Energy Aware Routing for LLMs**  
+  [[Paper](https://doi.org/10.1016/j.future.2025.108218)]  
+  Technique: Energy-aware routing.
+
+#### Complexity-Aware Query Routing
+
+- **EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents**  
+  [[Paper](https://doi.org/10.1145/3774904.3792995)]  
+  Technique: Complexity-aware query routing.
+
+#### Carbon-Aware Scheduling and Workload Allocation
+
+- **GAR: Carbon-Aware Routing for LLM Inference via Constrained Optimization**  
+  [[Paper](https://doi.org/10.48550/arXiv.2605.11603)]  
+  Technique: Carbon-aware routing.
+
+- **Carbon-Aware Workload Shifting for Mitigating Environmental Impact of Generative AI Models**  
+  [[Paper](https://doi.org/10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics62450.2024.00087)]  
+  Technique: Carbon-aware workload allocation.
+
+- **Carbon-Aware Quality Adaptation for Energy-Intensive Services**  
+  [[Paper](https://doi.org/10.1145/3679240.3734614)]  
+  Technique: Carbon-aware scheduling.
+
+---
+
+### Hardware-Aware Scheduling and Resource Allocation
+
+#### Heterogeneous GPU Allocation
+
+- **Idle Consumer GPUs as a Complement to Enterprise Hardware for LLM Inference: Performance, Cost and Carbon Analysis**  
+  [[Paper](https://doi.org/10.1145/3775043.3775047)]  
+  Technique: Heterogeneous GPU allocation.
+
+#### GPU Scaling
+
+- **Towards Greener LLMs: Bringing Energy-Efficiency to the Forefront of LLM Inference**  
+  [[Paper](https://arxiv.org/abs/2403.20306)]  
+  Technique: GPU scaling.
+
+#### CPU/GPU Resource Allocation
+
+- **Evaluating the Carbon Impact of Large Language Models at the Inference Stage**  
+  [[Paper](https://doi.org/10.1109/IPCCC59175.2023.10253886)]  
+  Technique: CPU/GPU resource allocation.
+
+#### Compiler Optimization
+
+- **Energy-Efficient Large Language Models**  
+  [[Paper](https://doi.org/10.1016/j.future.2026.108483)]  
+  Technique: Compiler optimization.
+
+#### Fleet-Level Optimization
+
+- **The 1/W Law: An Analytical Study of Context-Length Routing Topology and GPU Generation Gains for LLM Inference Energy Efficiency**  
+  [[Paper](https://doi.org/10.48550/arXiv.2603.17280)]  
+  Technique: Fleet-level optimization.
+
+---
+
+### Parallelism and Disaggregated Serving
+
+#### Right-Sized Parallelism
+
+- **DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency**  
+  [[Paper](https://doi.org/10.1109/HPCA61900.2025.00102)]  
+  Technique: Right-sized parallelism.
+
+#### Disaggregated Serving
+
+- **Splitwise: Efficient Generative LLM Inference Using Phase Splitting**  
+  [[Paper](https://doi.org/10.1109/ISCA59077.2024.00019)]  
+  Technique: Disaggregated serving.
