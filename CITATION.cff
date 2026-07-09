@@ -1,1 +1,44 @@
+cff-version: 1.2.0
+title: "Sustainable-LLM-Inference-Survey"
+message: "If you use this repository, please cite it using the metadata below."
+type: dataset
 
+authors:
+  - family-names: "Masthan Ali"
+    given-names: "Sabiya Banu"
+    affiliation: "School of Computer Science and Technology, Algoma University, Brampton, Canada"
+    email: "smasthanali@algomau.ca"
+
+  - family-names: "Danish"
+    given-names: "Syed Muhammad"
+    affiliation: "School of Computer Science and Technology, Algoma University, Brampton, Canada"
+    email: "syed.danish@algomau.ca"
+
+  - family-names: "Kaur"
+    given-names: "Rupinder"
+    affiliation: "Toronto Metropolitan University, Toronto, Canada"
+    email: "rupinder.kaur.ece@torontomu.ca"
+
+  - family-names: "Litoiu"
+    given-names: "Marin"
+    affiliation: "York University, Toronto, Canada"
+    email: "mlitoiu@yorku.ca"
+
+  - family-names: "Asad"
+    given-names: "Arghavan"
+    affiliation: "School of Computer Science and Technology, Algoma University, Brampton, Canada"
+    email: "arghavan.asad@algomau.ca"
+
+repository-code: "https://github.com/sabiyabanu829/Sustainable-LLM-Inference-Survey"
+
+license: "MIT"
+
+keywords:
+  - Large Language Models
+  - Sustainable AI
+  - Green AI
+  - Energy Efficiency
+  - LLM Inference
+  - Carbon-Aware AI
+  - Model Optimization
+  - Hardware Acceleration
