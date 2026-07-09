@@ -11,10 +11,6 @@ Large Language Models have achieved remarkable performance across numerous tasks
 
 ## Table of Contents
 
-## Table of Contents
-
-## Table of Contents
-
 - [Input-Level Optimization Techniques](#input-level-optimization-techniques)
   - [Input Length Control](#input-length-control)
     - [Prompt Design](#prompt-design)
