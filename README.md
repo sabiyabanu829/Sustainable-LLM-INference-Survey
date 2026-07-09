@@ -518,6 +518,24 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Input–Deployment Co-optimization
 
+- **Prompt Injection Mitigation with Agentic AI, Nested Learning, and AI Sustainability via Semantic Caching**  
+  [[Paper](https://doi.org/10.48550/arXiv.2601.13186)]  
+  Technique: Combines prompt-level security with semantic caching in a multi-agent deployment framework to reduce redundant LLM calls while improving prompt injection mitigation, latency, energy consumption, and carbon emissions. 
+
+- **Toward Sustainable GenAI Using Generation Directives for Carbon-Friendly Large Language Model Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2403.12900)]  
+  Technique: Uses generation directives at the prompt level together with carbon-aware deployment optimization (Sprout) to reduce the carbon footprint of LLM inference while maintaining generation quality.
+  
+### Input–Model Co-optimization
+
+### Model–Deployment Co-optimization
+
+### Deployment–Hardware Co-optimization
+
+### Model–Deployment–Hardware Co-optimization
+
+### Model–Hardware Co-optimization
+
 ### Input–Model Co-optimization
 
 ### Model–Deployment Co-optimization
