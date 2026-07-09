@@ -648,3 +648,122 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Model–Hardware Co-optimization
 
+- **Fast On-Device LLM Inference with NPUs**  
+  [[Paper](https://doi.org/10.1145/3669940.3707239)]  
+  Technique: Optimizes LLM inference through model optimization and Neural Processing Unit (NPU)-based hardware acceleration for efficient on-device deployment.
+
+- **Sometimes Painful but Promising: Feasibility and Trade-Offs of On-Device Language Model Inference**  
+  [[Paper](https://doi.org/10.1145/3788870)]  
+  Technique: Explores model optimization and hardware trade-offs for efficient on-device LLM inference.
+
+- **HALO: Hardware-Aware Quantization with Low Critical-Path-Delay Weights for LLM Acceleration**  
+  [[Paper](https://doi.org/10.1609/aaai.v40i27.39406)]  
+  Technique: Hardware-aware quantization for efficient LLM acceleration.
+
+- **Reducing Energy Footprint of LLM Inference through FPGA-Based Heterogeneous Computing Platforms**  
+  [[Paper](https://www.mdpi.com/2079-9292/15/5/1052)]  
+  Technique: FPGA-based heterogeneous hardware acceleration for energy-efficient LLM inference.
+
+- **Sparse Attention Remapping with Clustering for Efficient LLM Decoding on PIM**  
+  [[Paper](https://doi.org/10.48550/arXiv.2505.05772)]  
+  Technique: Sparse attention remapping with processing-in-memory (PIM) acceleration.
+
+- **LLM-NPU: Towards Efficient Foundation Model Inference on Low-Power Neural Processing Units**  
+  [[Paper](https://doi.org/10.1109/COINS65080.2025.11125797)]  
+  Technique: Model optimization for low-power Neural Processing Units.
+
+- **PRIME: PIM-Aware Efficient Compression for Memory-Bound Embedding Layers in SLLMs**  
+  [[Paper](https://doi.org/10.1109/ICCD65941.2025.00038)]  
+  Technique: PIM-aware model compression for efficient inference.
+
+- **HUFF-LLM: End-to-End Lossless Compression for Efficient LLM Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2502.00922)]  
+  Technique: End-to-end model compression for efficient hardware execution.
+
+- **MixPE: Quantization and Hardware Co-Design for Efficient LLM Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2411.16158)]  
+  Technique: Joint quantization and hardware co-design.
+
+- **End-to-End Acceleration of Generative Models with Runtime Regularized KV Cache Management**  
+  [[Paper](https://doi.org/10.1109/JETCAS.2025.3568716)]  
+  Technique: Runtime KV-cache management with hardware-aware acceleration.
+
+- **A 4.21 TFLOPS/W Memory-Efficient LLM Inference Accelerator with Bit-Layered Non-Uniform Quantization**  
+  [[Paper](https://doi.org/10.1109/ISCAS56072.2025.11043714)]  
+  Technique: Memory-efficient accelerator using bit-layered non-uniform quantization.
+
+- **Energy Efficient Spike Transformer Accelerator at the Edge**  
+  [[Paper](https://link.springer.com/article/10.1007/s44295-024-00040-5)]  
+  Technique: Spike Transformer hardware accelerator for edge AI.
+
+- **Low-Latency PIM Accelerator for Edge LLM Inference**  
+  [[Paper](https://doi.org/10.1109/LCA.2025.3618104)]  
+  Technique: Processing-in-memory accelerator for edge LLM inference.
+
+- **HADES: Hardware Accelerated Decoding for Efficient Speculation in Large Language Models**  
+  [[Paper](https://doi.org/10.1109/ICCEA65460.2025.11103323)]  
+  Technique: Hardware-accelerated speculative decoding.
+
+- **Breakthrough Low-Latency, High-Energy-Efficiency LLM Inference Performance Using NorthPole**  
+  [[Paper](https://doi.org/10.1109/HPEC62836.2024.10938418)]  
+  Technique: NorthPole accelerator architecture for efficient LLM inference.
+
+- **H²EAL: Hybrid-Bonding Architecture with Hybrid Sparse Attention for Efficient Long-Context LLM Inference**  
+  [[Paper](https://doi.org/10.1109/ICCAD66269.2025.11240713)]  
+  Technique: Hybrid sparse attention with hardware co-design.
+
+- **LAD: Efficient Accelerator for Generative Inference of LLM with Locality-Aware Decoding**  
+  [[Paper](https://doi.org/10.1109/HPCA61900.2025.00111)]  
+  Technique: Locality-aware decoding accelerator.
+
+- **MCBP: A Memory-Compute Efficient LLM Inference Accelerator Leveraging Bit-Slice-Enabled Sparsity and Repetitiveness**  
+  [[Paper](https://doi.org/10.1145/3725843.3756037)]  
+  Technique: Memory-compute co-designed accelerator.
+
+- **UniCAIM: A Unified CAM/CIM Architecture with Static-Dynamic KV Cache Pruning for Efficient Long-Context LLM Inference**  
+  [[Paper](https://doi.org/10.1109/DAC63849.2025.11133273)]  
+  Technique: CAM/CIM architecture with KV-cache pruning.
+
+- **AccLLM: Accelerating Long-Context LLM Inference via Algorithm-Hardware Co-Design**  
+  [[Paper](https://doi.org/10.1109/TVLSI.2026.3658524)]  
+  Technique: Algorithm-hardware co-design for long-context inference.
+
+- **CrossKV: Accelerating Large Language Model Inference via Cross-Stage Dynamic Co-Optimization for KV Cache**  
+  [[Paper](https://doi.org/10.1109/TCSI.2026.3668423)]  
+  Technique: Cross-stage dynamic KV-cache co-optimization.
+
+- **KLLM: Fast LLM Inference with K-Means Quantization**  
+  [[Paper](https://doi.org/10.48550/arXiv.2507.23035)]  
+  Technique: K-means quantization for efficient hardware inference.
+
+- **LLaMAF: An Efficient LLaMA2 Architecture Accelerator on Embedded FPGAs**  
+  [[Paper](https://doi.org/10.1109/WF-IoT62078.2024.10811385)]  
+  Technique: FPGA-based LLaMA2 accelerator.
+
+- **TellMe: An Energy-Efficient Ternary LLM Accelerator for Prefilling and Decoding on Edge FPGAs**  
+  [[Paper](https://doi.org/10.48550/arXiv.2504.16266)]  
+  Technique: Ternary FPGA accelerator for efficient LLM inference.
+
+- **KELLE: Co-Design KV Caching and eDRAM for Efficient LLM Serving in Edge Computing**  
+  [[Paper](https://doi.org/10.1145/3725843.3756071)]  
+  Technique: KV-cache and eDRAM co-design.
+
+- **Harmonia: Algorithm-Hardware Co-Design for Memory- and Compute-Efficient BFP-Based LLM Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2602.04595)]  
+  Technique: Algorithm-hardware co-design using block floating-point representation.
+
+- **DayPQ: Dynamic Layerwise Pruning and Quantization for LLM Inference Acceleration**  
+  [[Paper](https://doi.org/10.1109/TVLSI.2026.3666193)]  
+  Technique: Dynamic pruning and quantization.
+
+- **ANDA: Unlocking Efficient LLM Inference with a Variable-Length Grouped Activation Data Format**  
+  [[Paper](https://doi.org/10.1109/HPCA61900.2025.00110)]  
+  Technique: Activation data format optimization for efficient inference.
+
+- **Finding the Pareto Frontier of Low-Precision Data Formats and MAC Architecture for LLM Inference**  
+  [[Paper](https://doi.org/10.1109/DAC63849.2025.11132989)]  
+  Technique: Joint optimization of low-precision data formats and hardware architecture.
+
+- **SpAct-NDP: Efficient LLM Inference via Sparse Activation on NDP-GPU Heterogeneous Architecture**  
+  [[Paper](https://doi.org/10.1109/ASP-DAC66049.2026.11420624)]  
+  Technique: Sparse activation optimization on heterogeneous NDP-GPU hardware.
