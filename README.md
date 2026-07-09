@@ -550,5 +550,29 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Model–Deployment–Hardware Co-optimization
 
+- **An Energy-Aware Generative AI Edge Inference Framework for Low-Power IoT Devices**  
+  [[Paper](https://www.mdpi.com/2079-9292/14/20/4086)]  
+  Technique: Integrates energy-aware model optimization, edge deployment strategies, and low-power hardware management to enable efficient generative AI inference on IoT devices.
+
+- **Optimizing LLM Inference Clusters for Enhanced Performance and Energy Efficiency**  
+  [[Paper](https://doi.org/10.36227/techrxiv.172348951.12175366/v1)]  
+  Technique: Jointly optimizes model execution, distributed inference deployment, and cluster-level hardware resource allocation to improve performance and energy efficiency.
+
+- **Harnessing Your DRAM and SSD for Sustainable and Accessible LLM Inference with Mixed-Precision and Multi-Level Caching**  
+  [[Paper](https://doi.org/10.48550/arXiv.2410.14740)]  
+  Technique: Combines mixed-precision model optimization with multi-level caching across DRAM and SSD to improve deployment efficiency and reduce hardware energy consumption.
+
+- **Measurements and Optimizations of the Energy Consumption of AI Systems**  
+  [[Paper](https://doi.org/10.36227/techrxiv.175744079.98289886/v1)]  
+  Technique: Presents cross-layer optimizations spanning model design, deployment strategies, and hardware execution to reduce the overall energy consumption of AI systems.
+
+- **Disaggregated Speculative Decoding for Carbon-Efficient LLM Serving**  
+  [[Paper](https://doi.org/10.1109/LCA.2025.3630094)]  
+  Technique: Combines speculative decoding, disaggregated deployment architecture, and hardware resource management to reduce carbon emissions and improve serving efficiency.
+
+- **Energy Considerations of Large Language Model Inference and Efficiency Optimizations**  
+  [[Paper](https://aclanthology.org/2025.acl-long.1563.pdf)]  
+  Technique: Surveys and evaluates optimization techniques across the model, deployment, and hardware layers, highlighting their combined impact on LLM inference energy efficiency.
+
 ### Model–Hardware Co-optimization
 
