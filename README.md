@@ -548,6 +548,78 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Deployment–Hardware Co-optimization
 
+- **Dynamic Offloading Optimization for Multi-PIM LLM Inference**  
+  [[Paper](https://doi.org/10.1109/ICCE-Asia67487.2025.11263662)]  
+  Technique: Jointly optimizes deployment offloading decisions and multi-PIM hardware resources for energy-efficient LLM inference.
+
+- **A Deployment-Aware Framework for Carbon- and Water-Efficient LLM Serving**  
+  [[Paper](https://doi.org/10.3390/su172310473)]  
+  Technique: Combines deployment-aware workload scheduling with infrastructure-level resource management to reduce carbon emissions and water consumption.
+
+- **Characterizing LLM Inference Energy-Performance Tradeoffs Across Workloads and GPU Scaling**  
+  [[Paper](https://shashikantilager.com/assets/pdf/publications/LLM_charecterization_ccgrid_2026.pdf)]  
+  Technique: Studies deployment workloads together with GPU scaling policies to characterize energy-performance trade-offs.
+
+- **VoltaNaLLM: Feedback-Driven Frequency Control and State-Space Routing for Energy-Efficient LLM Serving**  
+  [[Paper](https://doi.org/10.48550/arXiv.2509.04827)]  
+  Technique: Combines deployment-level routing with hardware DVFS for energy-efficient LLM serving.
+
+- **GreenLLM: SLO-Aware Dynamic Frequency Scaling for Energy-Efficient LLM Serving**  
+  [[Paper](https://doi.org/10.48550/arXiv.2508.16449)]  
+  Technique: Integrates deployment-aware serving with hardware frequency scaling while maintaining service-level objectives.
+
+- **FreeSh: Fair, Resource- and Energy-Efficient Scheduling for LLM Serving on Heterogeneous GPUs**  
+  [[Paper](https://doi.org/10.48550/arXiv.2508.16449)]  
+  Technique: Optimizes deployment scheduling across heterogeneous GPU hardware for fair and energy-efficient inference.
+
+- **WAGES: Workload-Aware GPU Sharing System for Energy-Efficient Serverless LLM Serving**  
+  [[Paper](https://doi.org/10.1145/3731599.3767396)]  
+  Technique: Combines workload-aware deployment with GPU sharing to improve hardware utilization and reduce energy consumption.
+
+- **A Thermal-Aware Workload Scheduler for High-Performance LLM Inference in Cooling-Regulated Datacenters**  
+  [[Paper](https://doi.org/10.1145/3757892.3757906)]  
+  Technique: Jointly optimizes deployment scheduling and thermal management of hardware resources.
+
+- **CAMEL: Energy-Aware LLM Inference on Resource-Constrained Devices**  
+  [[Paper](https://doi.org/10.48550/arXiv.2508.09173)]  
+  Technique: Combines deployment optimization with resource-constrained hardware management for energy-efficient inference.
+
+- **BiScale: Energy-Efficient Disaggregated LLM Serving via Phase-Aware Placement and DVFS**  
+  [[Paper](https://doi.org/10.48550/arXiv.2602.18755)]  
+  Technique: Integrates disaggregated deployment, phase-aware workload placement, and hardware DVFS.
+
+- **ELLIE: Energy-Efficient LLM Inference at the Edge via Prefill-Decode Splitting**  
+  [[Paper](https://doi.org/10.1109/ASAP65064.2025.00031)]  
+  Technique: Combines edge deployment with hardware-aware prefill/decode execution for energy-efficient inference.
+
+- **EcoServe: Designing Carbon-Aware AI Inference Systems**  
+  [[Paper](https://doi.org/10.48550/arXiv.2502.05043)]  
+  Technique: Jointly optimizes deployment strategies and computing infrastructure for carbon-aware AI inference.
+
+- **HYBE: GPU-NPU Hybrid System for Efficient LLM Inference with Million-Token Context Window**  
+  [[Paper](https://doi.org/10.1145/3695053.3731051)]  
+  Technique: Combines deployment strategies with GPU-NPU heterogeneous hardware execution for efficient long-context inference.
+
+- **Power-Aware Dynamic Reallocation for Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2601.12241)]  
+  Technique: Dynamically reallocates deployment workloads across hardware resources based on power consumption.
+
+- **LEAP: LLM Inference on Scalable PIM-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism**  
+  [[Paper](https://doi.org/10.1109/ICCAD66269.2025.11240722)]  
+  Technique: Combines deployment mapping with scalable PIM hardware architecture for energy-efficient inference.
+
+- **AsymServe: Demystifying and Optimizing LLM Serving Efficiency on CPU Acceleration Units**  
+  [[Paper](https://link.springer.com/chapter/10.1007/978-981-95-1021-4_17)]  
+  Technique: Optimizes LLM serving through deployment-aware scheduling on CPU acceleration hardware.
+
+- **Towards Sustainable Large Language Model Serving**  
+  [[Paper](https://doi.org/10.1145/3727200.3727220)]  
+  Technique: Jointly optimizes deployment infrastructure and hardware resource management for sustainable LLM serving.
+
+- **Deeploy: Enabling Energy-Efficient Deployment of Small Language Models on Heterogeneous Microcontrollers**  
+  [[Paper](https://doi.org/10.1109/TCAD.2024.3443718)]  
+  Technique: Integrates deployment optimization with heterogeneous microcontroller hardware for efficient on-device language model inference.
+
 ### Model–Deployment–Hardware Co-optimization
 
 - **An Energy-Aware Generative AI Edge Inference Framework for Low-Power IoT Devices**  
