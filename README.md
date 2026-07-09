@@ -534,6 +534,18 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Model–Deployment Co-optimization
 
+- **Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights**  
+  [[Paper](https://doi.org/10.1109/CAI64502.2025.00067)]  
+  Technique: Jointly evaluates model behavior and deployment-level efficiency metrics to optimize LLM inference energy, latency, and performance.
+
+- **AE-LLM: Adaptive Efficiency Optimization for Large Language Models**  
+  [[Paper](https://doi.org/10.48550/arXiv.2603.20492)]  
+  Technique: Applies adaptive model-efficiency control during deployment to improve inference efficiency under runtime constraints.
+
+- **E2LLM: Structure-Guided Efficient Inference for LLMs in Distributed Edge-IoT Environments**  
+  [[Paper](https://doi.org/10.1109/TMC.2026.3676689)]  
+  Technique: Combines model-structure-guided inference with distributed deployment optimization for efficient LLM serving in edge-IoT environments.
+
 ### Deployment–Hardware Co-optimization
 
 ### Model–Deployment–Hardware Co-optimization
