@@ -13,6 +13,8 @@ Large Language Models have achieved remarkable performance across numerous tasks
 
 ## Table of Contents
 
+## Table of Contents
+
 - [Input-Level Optimization Techniques](#input-level-optimization-techniques)
   - [Input Length Control](#input-length-control)
     - [Prompt Design](#prompt-design)
@@ -45,11 +47,12 @@ Large Language Models have achieved remarkable performance across numerous tasks
     - [Speculative Decoding](#speculative-decoding)
     - [Speculative Beam Decoding](#speculative-beam-decoding)
     - [Sampling Policy Control](#sampling-policy-control)
-      
+
 - [Deployment-Level Optimization Techniques](#deployment-level-optimization-techniques)
   - [Batching and Scheduling](#batching-and-scheduling)
     - [Continuous Batching](#continuous-batching)
     - [Dynamic Batching](#dynamic-batching)
+    - [Batch Tuning](#batch-tuning)
     - [Layered Prefill Scheduling](#layered-prefill-scheduling)
     - [SLIT Scheduling](#slit-scheduling)
   - [Elastic Provisioning Controls](#elastic-provisioning-controls)
@@ -78,9 +81,17 @@ Large Language Models have achieved remarkable performance across numerous tasks
   - [Parallelism and Disaggregated Serving](#parallelism-and-disaggregated-serving)
     - [Right-Sized Parallelism](#right-sized-parallelism)
     - [Disaggregated Serving](#disaggregated-serving)
-  - [Other Deployment-Level Efficiency Techniques](#other-deployment-level-efficiency-techniques)
-    - [Batch Tuning](#batch-tuning)
-    - [Cost-Aware Scheduling](#cost-aware-scheduling)
+
+- [Hardware-Level Optimization Techniques](#hardware-level-optimization-techniques)
+  - [Hardware Power Management](#hardware-power-management)
+    - [DVFS / Clock Scaling](#dvfs--clock-scaling)
+    - [Power Capping](#power-capping)
+  - [Hardware Accelerators](#hardware-accelerators)
+    - [Compute-in-Memory (CIM) and Processing-in-Memory (PIM)](#compute-in-memory-cim-and-processing-in-memory-pim)
+    - [In-Storage Inference Systems (ISP)](#in-storage-inference-systems-isp)
+    - [ASIC / Dataflow Accelerators](#asic--dataflow-accelerators)
+    - [TPU / NPU Accelerators](#tpu--npu-accelerators)
+    - [FPGA Accelerators](#fpga-accelerators)
 
 ## Input-Level Optimization Techniques
 
@@ -404,3 +415,91 @@ Deployment-level optimization focuses on improving how LLM inference requests ar
 - **Splitwise: Efficient Generative LLM Inference Using Phase Splitting**  
   [[Paper](https://doi.org/10.1109/ISCA59077.2024.00019)]  
   Technique: Disaggregated serving.
+
+  ## Hardware-Level Optimization Techniques
+
+Hardware-level optimization focuses on reducing LLM inference energy by improving hardware operation, resource utilization, and specialized accelerator architectures. Unlike model-level techniques, these approaches optimize the underlying computing platform without modifying the neural network itself.
+
+### Hardware Power Management
+
+#### DVFS / Clock Scaling
+
+- **Energy Efficient GPU Frequency Scaling Policy for Inference Serving Using Queue Model**  
+  [[Paper](https://doi.org/10.1109/SCECS65243.2025.11065043)]  
+  Technique: Queue-aware DVFS that dynamically adjusts GPU frequency according to workload conditions to improve energy efficiency.
+
+- **Decoupled Analysis of DVFS Effects in Prefill and Decode Stages of Large Language Model Inference**  
+  [[Paper](https://doi.org/10.1109/EI268505.2025.11425606)]  
+  Technique: Stage-aware DVFS that applies different GPU frequencies during the prefill and decode stages to balance energy consumption and latency.
+
+- **SLO-Aware GPU DVFS for Energy-Efficient LLM Inference Serving**  
+  [[Paper](https://doi.org/10.1109/LCA.2024.3406038)]  
+  Technique: Dynamically scales GPU frequency while maintaining latency service-level objectives (SLOs).
+
+#### Power Capping
+
+- **From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference**  
+  [[Paper](https://doi.org/10.1109/HPEC58863.2023.10363447)]  
+  Technique: GPU power capping to reduce inference energy consumption with minimal performance degradation.
+
+- **Sustainable Supercomputing for AI: GPU Power Capping at HPC Scale**  
+  [[Paper](https://doi.org/10.1145/3620678.3624793)]  
+  Technique: Limits GPU power to reduce energy consumption while maintaining acceptable inference latency.
+
+---
+
+### Hardware Accelerators
+
+#### Compute-in-Memory (CIM) and Processing-in-Memory (PIM)
+
+- **CIM for Transformer Models: Enhancing Large Language Model Inference Efficiency**  
+  [[Paper](https://doi.org/10.1109/ISVLSI65124.2025.11130222)]  
+  Technique: Compute-in-Memory accelerator that performs computation directly within memory arrays to reduce data movement.
+
+- **A Scalable and Energy-Efficient Processing-in-Memory Architecture for Gen-AI**  
+  [[Paper](https://doi.org/10.1109/JETCAS.2025.3566929)]  
+  Technique: Processing-in-Memory architecture that executes computation near memory to improve throughput and energy efficiency.
+
+- **PIM-AI: A Novel Architecture for High-Efficiency LLM Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2411.17309)]  
+  Technique: PIM accelerator optimized for transformer and generative AI workloads.
+
+#### In-Storage Inference Systems (ISP)
+
+- **E-Flash: Energy-Efficient LLM Mapping on NAND Flash-Based In-Storage Inference Computing**  
+  [[Paper](https://doi.org/10.1109/TVLSI.2026.3657777)]  
+  Technique: In-storage processing architecture that performs inference within NAND flash storage to reduce data movement and energy consumption.
+
+- **REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing**  
+  [[Paper](https://doi.org/10.1145/3695053.3731116)]  
+  Technique: In-storage retrieval system that integrates retrieval and inference close to storage, improving throughput and energy efficiency.
+
+#### ASIC / Dataflow Accelerators
+
+- **The Immutable Tensor Architecture: A Pure Dataflow Approach for Secure, Energy-Efficient AI Inference**  
+  [[Paper](https://doi.org/10.48550/arXiv.2511.22889)]  
+  Technique: ASIC/dataflow accelerator that embeds tensor operations in hardware to maximize performance per watt.
+
+#### TPU / NPU Accelerators
+
+- **Leveraging Compute-in-Memory for Efficient Generative Model Inference in TPUs**  
+  [[Paper](https://doi.org/10.23919/DATE64628.2025.10993224)]  
+  Technique: TPU accelerator using digital compute-in-memory matrix multiplication units for energy-efficient LLM inference.
+
+#### FPGA Accelerators
+
+- **TellMe: An Efficient End-to-End Ternary LLM Prefill and Decode Accelerator with Table-Lookup MatMul on Edge FPGAs**  
+  [[Paper](https://doi.org/10.1145/3748173.3779191)]  
+  Technique: FPGA accelerator optimized for ternary large language models.
+
+- **HLSTransform: Energy-Efficient LLaMA 2 Inference on FPGAs via High-Level Synthesis**  
+  [[Paper](https://doi.org/10.1145/3748173.3779191)]  
+  Technique: HLS-based FPGA accelerator that balances throughput, power consumption, and model quality.
+
+- **Fast-Prefill: FPGA Accelerated Sparse Attention for Long Context LLM Prefill**  
+  [[Paper](https://doi.org/10.1109/FCCM68464.2026.00067)]  
+  Technique: FPGA accelerator for sparse attention to improve long-context LLM inference efficiency.
+
+- **TerEffIC: Highly Efficient Ternary LLM Inference on FPGA**  
+  [[Paper](https://doi.org/10.48550/arXiv.2502.16473)]  
+  Technique: FPGA accelerator that exploits ternary computation for energy-efficient LLM inference.
