@@ -536,12 +536,3 @@ Cross-level optimization strategies jointly optimize more than one level of the 
 
 ### Model–Hardware Co-optimization
 
-### Input–Model Co-optimization
-
-### Model–Deployment Co-optimization
-
-### Deployment–Hardware Co-optimization
-
-### Model–Deployment–Hardware Co-optimization
-
-### Model–Hardware Co-optimization
