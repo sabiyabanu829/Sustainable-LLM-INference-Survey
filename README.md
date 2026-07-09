@@ -93,6 +93,14 @@ Large Language Models have achieved remarkable performance across numerous tasks
     - [TPU / NPU Accelerators](#tpu--npu-accelerators)
     - [FPGA Accelerators](#fpga-accelerators)
 
+- [Cross-Level Optimization Strategies](#cross-level-optimization-strategies)
+  - [Input–Deployment Co-optimization](#inputdeployment-co-optimization)
+  - [Input–Model Co-optimization](#inputmodel-co-optimization)
+  - [Model–Deployment Co-optimization](#modeldeployment-co-optimization)
+  - [Deployment–Hardware Co-optimization](#deploymenthardware-co-optimization)
+  - [Model–Deployment–Hardware Co-optimization](#modeldeploymenthardware-co-optimization)
+  - [Model–Hardware Co-optimization](#modelhardware-co-optimization)
+
 ## Input-Level Optimization Techniques
 
 ### Input Length Control
@@ -503,3 +511,19 @@ Hardware-level optimization focuses on reducing LLM inference energy by improvin
 - **TerEffIC: Highly Efficient Ternary LLM Inference on FPGA**  
   [[Paper](https://doi.org/10.48550/arXiv.2502.16473)]  
   Technique: FPGA accelerator that exploits ternary computation for energy-efficient LLM inference.
+
+  ## Cross-Level Optimization Techniques
+
+Cross-level optimization strategies jointly optimize more than one level of the LLM inference stack. Unlike single-level optimization, these methods coordinate input design, model behavior, deployment decisions, and hardware execution to improve energy efficiency, carbon reduction, latency, and accuracy trade-offs.
+
+### Input–Deployment Co-optimization
+
+### Input–Model Co-optimization
+
+### Model–Deployment Co-optimization
+
+### Deployment–Hardware Co-optimization
+
+### Model–Deployment–Hardware Co-optimization
+
+### Model–Hardware Co-optimization
