@@ -528,6 +528,10 @@ Cross-level optimization strategies jointly optimize more than one level of the 
   
 ### Input–Model Co-optimization
 
+- **An Energy-Efficient Vision Language Model Inference with Importance-Aware Token Pruning**  
+  [[Paper](https://doi.org/10.1109/APCCAS67402.2025.11376880)]  
+  Technique: Combines input-level visual token pruning with model-level importance estimation to remove redundant visual tokens before and during inference, thereby reducing computation and energy consumption while maintaining vision-language task performance.
+
 ### Model–Deployment Co-optimization
 
 ### Deployment–Hardware Co-optimization
